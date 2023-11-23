@@ -435,7 +435,7 @@ const music_graph_descriptors = {
 		['Heavy Metal',                         '#cab2d6'],
 		['Pop/Rock',                            '#6a3d9a'],
 		['Psychedelic/Garage',                  '#ffff99'],
-		[' Punk/New Wave',                      '#b15928'],
+		['Punk/New Wave',                       '#b15928'],
 		['Rock & Roll/Roots',                   '#ff7f00'],
 		['Singer/Songwriter',                   '#1f78b4'],
 		['Soft Rock',                           '#b15928'],
