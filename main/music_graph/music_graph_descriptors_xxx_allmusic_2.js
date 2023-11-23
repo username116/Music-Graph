@@ -322,6 +322,8 @@ const music_graph_descriptors = {
 	map_colors: [	// Todo: use colorbrewer sequential palettes
 		// Supergenres
 
+		['Central cluster',                     '#dbdbdb'],
+		
 		['Classical',                           '#a6cee3'],
 		['Country',                             '#1f78b4'],
 		['Electronic',                          '#b2df8a'],
