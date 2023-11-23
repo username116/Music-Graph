@@ -334,14 +334,14 @@ function musicGraphForDrawing(descriptor = music_graph_descriptors) {
 		}
 		
 		// Join music groups in circle: last one (4th) is next to first one (1th). We omit anything past that point!
-		mygraph.addLink(style_supergenre_supercluster[0][0], style_supergenre_supercluster[1][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[0][0])]});
-		mygraph.addLink(style_supergenre_supercluster[1][0], style_supergenre_supercluster[2][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[1][0])]});
-		mygraph.addLink(style_supergenre_supercluster[2][0], style_supergenre_supercluster[3][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[2][0])]});
-		mygraph.addLink(style_supergenre_supercluster[3][0], style_supergenre_supercluster[0][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[3][0])]});
-		// Join Folk with Pop/rock Music
-		mygraph.addLink(style_supergenre_supercluster[1][0], style_supergenre_supercluster[4][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[4][0])]});
-		// Join Classical with Electronic Music
-		mygraph.addLink(style_supergenre_supercluster[3][0], style_supergenre_supercluster[5][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[5][0])]});
+		// mygraph.addLink(style_supergenre_supercluster[0][0], style_supergenre_supercluster[1][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[0][0])]});
+		// mygraph.addLink(style_supergenre_supercluster[1][0], style_supergenre_supercluster[2][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[1][0])]});
+		// mygraph.addLink(style_supergenre_supercluster[2][0], style_supergenre_supercluster[3][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[2][0])]});
+		// mygraph.addLink(style_supergenre_supercluster[3][0], style_supergenre_supercluster[0][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[3][0])]});
+		// // Join Folk with Pop/rock Music
+		// mygraph.addLink(style_supergenre_supercluster[1][0], style_supergenre_supercluster[4][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[4][0])]});
+		// // Join Classical with Electronic Music
+		// mygraph.addLink(style_supergenre_supercluster[3][0], style_supergenre_supercluster[5][0], {weight: inter_supergenre_supercluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '10, 10'], linecolor: ['stroke', map_colors.get(style_supergenre_supercluster[5][0])]});
 		
 		return mygraph;
 }
