@@ -357,7 +357,10 @@
 								}
 								if (link.data.weight !== undefined && link.data.weight !== null) {
 									<!-- linkDistance = link.data.weight; -->
-									const [distance, influence] = calcGraphDistance(graph, link.fromId, link.toId, true, influenceMethod);
+									// const [distance, influence] = calcGraphDistance(graph, link.fromId, link.toId, true, influenceMethod);
+									
+									const {distance, influence} = calcGraphDistance(graph, link.fromId, link.toId, true, influenceMethod);
+
 									linkDistance = Math.round(distance - influence);
 								}
 								count++;
