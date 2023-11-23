@@ -1410,7 +1410,7 @@ const music_graph_descriptors = {
 	
 	// Other
 	bPreRender: true, // (false) Renders graph on the fly on browsers or (true) pre-rendering (it may take some time while loading entire graph)
-	renderMethod: 'realDistance'	// ('graph') Renders graph according to link centrality/gravity forces.
+	renderMethod: 'graph'			// ('graph') Renders graph according to link centrality/gravity forces.
 									// ('graphWeighted') uses the link's weight values at top to render similar distances to real ones, but also using link forces.
 									// ('realDistance') uses the link's weight values at top to render real distances. Beware it will look really weird!
 };
