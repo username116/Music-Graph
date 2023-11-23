@@ -221,7 +221,22 @@ const music_graph_descriptors = {
 	// i.e. It will list Folk and Classical only once, even if there are multiple (sub)SuperGenres.
 	map_colors: [	// Todo: use colorbrewer sequential palettes
 		// Supergenres
-
+		['Electronic_supergenre'				,'#e04103'],
+		['Hip Hop_supergenre'					,'#D88417'],
+		['Jazz_supergenre'						,'#F3C605'],
+		['Rock_supergenre'						,'#F9FF03'],
+		['Reggae_supergenre'					,'#D4F900'],
+		['Latin_supergenre'						,'#8FA800'],
+		['Funk / Soul_supergenre'				,'#2E5541'],
+		['Blues_supergenre'						,'#006da8'],
+		['Non-Music_supergenre'					,'#005da1'],
+		['Pop_supergenre'						,'#2640ab'],
+		['Classical_supergenre'					,'#540AC8'],
+		['Brass & Military_supergenre'			,'#8000A1'],
+		['Children\u0027s_supergenre'			,'#950610'],
+		['Folk, World, & Country_supergenre'	,'#c00000'],
+		['Stage & Screen_supergenre'			,'#adadad'],
+		
 		// Supergenre Clusters
 
 		// Supergenre SuperClusters	
