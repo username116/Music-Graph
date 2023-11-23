@@ -293,19 +293,19 @@
 				
 				// SuperGenre/Node Color label legend
 				let paragraph = document.getElementById('label');
-				let text = '<div id="labelHeader">SuperGenre Labels</div>';
+				let text = '<div id="labelHeader">Discogs</div>';
 				function logMapElements(value, key, map) {
 					let aCheck = key.replace('_supergenre','');
 					if (aCheck != key) { // We only wants supergenre strings
-						let bCheck = aCheck.replace('Folk',''); 
-						entry = bCheck.replace('Classical',''); 
+						let bCheck = aCheck.replace('Folk--',''); 
+						entry = bCheck.replace('Classical--',''); 
 						if (entry == aCheck) { // We treat Colks and Classical supergenres appart
 							text += '<span style="color:' + value + ';">' + entry + '</span>' + '<br>';
 							return;
-						} else if (entry == bCheck && text.replace('Folk','') == text) { //Folk
+						} else if (entry == bCheck && text.replace('Folk---','') == text) { //Folk
 							text += '<span style="color:' + value + ';">' + 'Folk Music' + '</span>' + '<br>';
 							return;
-						} else if (entry != bCheck && text.replace('Classical','') == text) { //Classical
+						} else if (entry != bCheck && text.replace('Classical---','') == text) { //Classical
 							text += '<span style="color:' + value + ';">' + 'Classical Music' + '</span>' + '<br>';
 							return;
 						}
