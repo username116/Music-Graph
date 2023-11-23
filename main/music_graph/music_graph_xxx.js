@@ -270,7 +270,7 @@ function musicGraphForDrawing(descriptor = music_graph_descriptors) {
 			}
 			let sub_lenght = style_supergenre_cluster[i][1].length;
 			for (j = 0; j < sub_lenght; j++) {
-				mygraph.addLink(style_supergenre_cluster[i][0], style_supergenre_cluster[i][1][j], {weight: supergenre_cluster, absoluteWeight: 0, lineshape: [], linecolor: ['stroke', map_colors.get(style_supergenre_cluster[i][1][j])]});
+				mygraph.addLink(style_supergenre_cluster[i][0], style_supergenre_cluster[i][1][j], {weight: supergenre_cluster, absoluteWeight: 0, lineshape: ['stroke-dasharray', '3, 15'], linecolor: ['stroke', map_colors.get(style_supergenre_cluster[i][1][j])]});
 				mygraph.addNode(style_supergenre_cluster[i][1][j], {shape: style_supergenreShape, size: style_supergenreSize, imageLink: style_supergenreImageLink, color: map_colors.get(style_supergenre_cluster[i][1][j])});
 			}
 			//Adds cluster size and color
