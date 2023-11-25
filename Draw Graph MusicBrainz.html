@@ -348,7 +348,7 @@
 					let linkDistance = -1;
 					let count = 0;
 					graph.forEachLinkedNode(nodeId, function(node, link){ //List of links
-						if (count < 80) {
+						if (count < 16) {
 							if (link.id !== undefined && link.id !== null) {
 								if (link.data.linecolor !== undefined && link.data.linecolor[1] !== null) {
 									bgcolor = link.data.linecolor[1];
@@ -369,7 +369,7 @@
 								if (count % 2 != 0) {text += '<br>';}
 								text += '&nbsp;<span style="font-size: ' + textSize + ';">#' + count + ':&nbsp;</span><span style="background:' + bgcolor  + ';color:' + textColor + ';border: 1px dashed ' + borderColor + '; font-size: ' + textSize + ';">&nbsp;' + showLink  + '&nbsp;-&nbsp;' + linkDistance + '&nbsp;</span>';
 							}
-						} else if (count == 80){
+						} else if (count == 16){
 							count++;
 							text += '<br>&nbsp;<span style="font-size: ' + textSize + ';">...&nbsp;</span>'
 						}
