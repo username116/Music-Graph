@@ -291,29 +291,29 @@
 					}
 				});
 				
-				// SuperGenre/Node Color label legend
-				let paragraph = document.getElementById('label');
-				let text = '<div id="labelHeader">SuperGenre Labels</div>';
-				function logMapElements(value, key, map) {
-					let aCheck = key.replace('_supergenre','');
-					if (aCheck != key) { // We only wants supergenre strings
-						let bCheck = aCheck.replace('Folk',''); 
-						entry = bCheck.replace('Classical',''); 
-						if (entry == aCheck) { // We treat Colks and Classical supergenres appart
-							text += '<span style="color:' + value + ';">' + entry + '</span>' + '<br>';
-							return;
-						} else if (entry == bCheck && text.replace('Folk','') == text) { //Folk
-							text += '<span style="color:' + value + ';">' + 'Folk Music' + '</span>' + '<br>';
-							return;
-						} else if (entry != bCheck && text.replace('Classical','') == text) { //Classical
-							text += '<span style="color:' + value + ';">' + 'Classical Music' + '</span>' + '<br>';
-							return;
-						}
-					}
-				}
-				map_colors.forEach(logMapElements);
-				paragraph.innerHTML = text;
-				dragElement(paragraph);
+				// // SuperGenre/Node Color label legend
+				// let paragraph = document.getElementById('label');
+				// let text = '<div id="labelHeader">SuperGenre Labels</div>';
+				// function logMapElements(value, key, map) {
+				// 	let aCheck = key.replace('_supergenre','');
+				// 	if (aCheck != key) { // We only wants supergenre strings
+				// 		let bCheck = aCheck.replace('Folk',''); 
+				// 		entry = bCheck.replace('Classical',''); 
+				// 		if (entry == aCheck) { // We treat Colks and Classical supergenres appart
+				// 			text += '<span style="color:' + value + ';">' + entry + '</span>' + '<br>';
+				// 			return;
+				// 		} else if (entry == bCheck && text.replace('Folk','') == text) { //Folk
+				// 			text += '<span style="color:' + value + ';">' + 'Folk Music' + '</span>' + '<br>';
+				// 			return;
+				// 		} else if (entry != bCheck && text.replace('Classical','') == text) { //Classical
+				// 			text += '<span style="color:' + value + ';">' + 'Classical Music' + '</span>' + '<br>';
+				// 			return;
+				// 		}
+				// 	}
+				// }
+				// map_colors.forEach(logMapElements);
+				// paragraph.innerHTML = text;
+				// dragElement(paragraph);
 				
 				// Selected node label at top, and list of links
 				function showNode(nodeId, bHover = false) {
@@ -713,8 +713,8 @@
 			<br>
 			<button id="resetButton" onclick="location.href='https://github.com/regorxxx/Music-Graph';" style="width: 8.2rem">Open GitHub</button>
 		</span>
-		<div id='label'>
+		<!-- <div id='label'>
 			Labels...
-		</div>
+		</div> -->
 	</body>
 </html>
